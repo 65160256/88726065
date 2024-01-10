@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ใบสมัครงาน</title>
+    </head>
+
+    <style>
+        table th h1{
+            margin-right: 200px;
+        }
+    </style>
+    <center>
+    <body>
+        <h2>ใบสมัครงาน</h2>
+
+        <form action="job.php" method="post">
+            <table>
+                <tr>
+                    <td><b><label for="fname">ชื่อ *</label></b></td>
+                    <td><b><label for="lname">นามสกุล *</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="fname" name="fname" required /></td>
+                    <td><input type="text" id="lname" name="lname" required /></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><b><label for="email">อีเมล *</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="email" name="email" id="email" style="width: 342px;" required/></td>
+                </tr>
+                <tr>
+                    <td><b><label for="web">เว็บไซต์ผลงาน *</label></b></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="url" name="web" id="web" value="http://" style="width: 342px;" required/></td>
+                </tr>
+                <tr>
+                    <td><b><label for="posit">ตำแหน่งที่ต้องการสมัคร *</label></b></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="text" name="posit" id="posit" style="width: 342px;" required/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><b><label for="salary">เงินเดือนที่ต้องการ</label></b></td>
+                    <td><b><label for="start_date">จะเริ่มงานได้เมื่อไหร่</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="number" id="salary" name="salary"  required /></td>
+                    <td><input type="text" id="start_date" name="start_date" required /></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><b><label for="phone">โทรศัพท์มือถือ *</label></b></td>
+                    <td><b><label for="phoneh">โทรศัพท์บ้าน</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="tel" id="phone" name="phone" required /></td>
+                    <td><input type="tel" id="phoneh" name="phoneh" required /></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><b><label for="moveh">คุณสะดวกที่จะย้ายที่อยู่หรือไม่</label></b></td>
+                </tr>
+                <td>
+                    <input type="radio" name="moveh" id="moveh_yes" value="moveh" required/>
+                    <label for="moveh_yes">สะดวก</label>
+                    <input type="radio" name="moveh" id="moveh_no" value="moveh" required/>
+                    <label for="moveh_no">ไม่สะดวก</label>
+                    <input type="radio" name="moveh" id="moveh_maybe" value="moveh" required/>
+                    <label for="moveh_maybe">ไม่แน่ใจ</label>  
+                </td>
+            </table>
+            <table>
+                <tr>
+                    <td><b><label for="woking">ลักษณะงานที่ท่าในที่ทํางานล่าสุด</label></b></td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="woking" id="woking" style="width: 342px;" required/></td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><b><label for="question">คำถาม</label></b></td>
+                </tr>
+                <tr>
+                    <td><textarea name="question" id="question" cols="45" rows="5"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <button type="submit">ส่งใบสมัคร</button>
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+    </center>
+</html>
